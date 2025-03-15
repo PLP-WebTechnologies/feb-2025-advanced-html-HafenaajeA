@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced HTML5 Elements</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f4;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: left;
+      }
+      form {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      input,
+      select,
+      button {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+      button {
+        background-color: #5cb85c;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #4cae4c;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Almando second html5 page</h1>
+
+    <h2>Ordered List</h2>
+    <ol type="I">
+      <li>Item One</li>
+      <li>Item Two</li>
+      <li>Item Three</li>
+      <li>Item Four</li>
+    </ol>
+
+    <h2>External Image</h2>
+    <img
+      src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg"
+      alt="Beautiful Scenery"
+      width="600"
+    />
+
+    <h2>Contacts Table</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>Almando Hafenaaje</td>
+        <td>522 Tolla street, greenwell</td>
+        <td>+264816599224</td>
+        <td>almandocode@gmail.com</td>
+      </tr>
+      <tr>
+        <td>lineekela haihambo</td>
+        <td>456 Avenue, Windoek</td>
+        <td>+264814991034</td>
+        <td>lineekela@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Michael Taapopi</td>
+        <td>Havana, windhoek</td>
+        <td>+246816789991</td>
+        <td>michael@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Sarah Wilson</td>
+        <td>Freedomland , windhoek</td>
+        <td>+264853599224</td>
+        <td>sarah@gmail.com</td>
+      </tr>
+      <tr>
+        <td>David Lee</td>
+        <td>mondecristo Drive, windhoek City</td>
+        <td>+264833001000</td>
+        <td>david@paratusafrica.com.na</td>
+      </tr>
+    </table>
+
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your full name"
+        required
+      />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter a secure password"
+        required
+      />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="prefer not to say">prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label>Newsletter Subscription:</label>
+      <input type="checkbox" id="subscribe" name="subscribe" /> Subscribe to our
+      newsletter
+
+      <label>Preferred Contact Method:</label>
+      <input
+        type="radio"
+        id="phone"
+        name="contact_method"
+        value="phone"
+        required
+      />
+      <label for="phone">Phone</label>
+      <input
+        type="radio"
+        id="email_contact"
+        name="contact_method"
+        value="email"
+        required
+      />
+      <label for="email_contact">Email</label>
+
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
